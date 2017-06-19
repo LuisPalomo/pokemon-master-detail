@@ -1,7 +1,7 @@
 # PokemonMasterDetail
 Simple client and server side application made with Angular 4 and Express.
-To start the client side use `ng serve`. It will start in `http://localhost:4200/`.
 To start the server side use node `node server.js`. It will start in `http://localhost:8080/`.
+To start the client side use `npm run start`. It will start in `http://localhost:4200/`.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.1.2.
 
