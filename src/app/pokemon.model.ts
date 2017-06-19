@@ -1,5 +1,6 @@
 export class Pokemon {
   name: string;
+  surname: string;
   weight: number;
   sprites: Sprites;
   height: number;
@@ -9,4 +10,6 @@ export class Pokemon {
 };
 class Sprites {
   front_default: string;
+  gif: string;
+  artwork: string;
 };

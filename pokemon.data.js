@@ -1,9 +1,12 @@
 exports.pokemonList = [
     {
-        "name": "bulbasaur",
+        "name": "Bulbasaur",
+        "surname":"The Seed Pokémon",
         "weight": 69,
         "sprites": {
-            "front_default": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/1.png"
+            "front_default": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/1.png",
+            "gif": "https://veekun.com/dex/media/pokemon/main-sprites/emerald/animated/1.gif",
+            "artwork": "https://veekun.com/dex/media/pokemon/sugimori/1.png"
         },
         "height": 7,
         "id": 1,
@@ -11,10 +14,13 @@ exports.pokemonList = [
         "types": ["grass", "poison"]
     },
     {
-        "name": "charmander",
+        "name": "Charmander",
+        "surname":"The Lizard Pokémon",
         "weight": 85,
         "sprites": {
-            "front_default": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/4.png"
+            "front_default": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/4.png",
+            "gif": "https://veekun.com/dex/media/pokemon/main-sprites/emerald/animated/4.gif",
+            "artwork": "https://veekun.com/dex/media/pokemon/sugimori/4.png"
         },
         "height": 6,
         "id": 4,
@@ -22,10 +28,13 @@ exports.pokemonList = [
         "types": ["fire"]
     },
     {
-        "name": "squirtle",
+        "name": "Squirtle",
+        "surname":"The Tiny Turtle Pokémon",
         "weight": 90,
         "sprites": {
-            "front_default": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/7.png"
+            "front_default": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/7.png",
+            "gif": "https://veekun.com/dex/media/pokemon/main-sprites/emerald/animated/7.gif",
+            "artwork": "https://veekun.com/dex/media/pokemon/sugimori/7.png"
         },
         "height": 5,
         "id": 7,
