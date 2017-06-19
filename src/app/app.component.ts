@@ -21,11 +21,11 @@ export class AppComponent implements OnInit {
   };
 
   ngOnInit() {
-    this.pokemonService.getPokemons().then(response => this.pokemonList = response);
+    this.pokemonService.getPokemons().then(response => this.pokemonList = response.filter(pokemon => pokemon.preEvolution === undefined)); // Show only the basic pokemons
   }
 
-  getDetails(pokemon: Pokemon) {
+  getDetails(pokemonId: number) {
     this.pokemonDetails = null;  // Made details null to show loader spinner
-    this.pokemonService.getPokemon(pokemon.id).then(response => setTimeout(() => this.pokemonDetails = response, 1000)); // Timeout added because the server response is instant
+    this.pokemonService.getPokemon(pokemonId).then(response => setTimeout(() => this.pokemonDetails = response, 1000)); // Timeout added because the server response is instant
   }
 }

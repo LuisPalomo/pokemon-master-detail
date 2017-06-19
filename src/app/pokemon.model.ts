@@ -6,7 +6,9 @@ export class Pokemon {
   height: number;
   id: number;
   base_experience: number;
-  types: Array<string>
+  types: Array<string>;
+  evolution?: number;
+  preEvolution?: number;
 };
 class Sprites {
   front_default: string;
