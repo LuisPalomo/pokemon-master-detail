@@ -1,0 +1,26 @@
+<div style="display: flex;">
+  <!-- Pokemon list -->
+  <md-list class="pokemon-list">
+    <h3 md-subheader>Pokemons</h3>
+    <md-list-item *ngFor="let pokemon of pokemonList" (click)="getDetails(pokemon.id)">
+      <img md-list-avatar src="{{pokemon.sprites.front_default}}">
+      <h4 md-line>{{pokemon.name}}</h4>
+    </md-list-item>
+  </md-list>
+  <!-- Pokemon Details -->
+  <md-spinner *ngIf="pokemonDetails === null" class="app-spinner"></md-spinner>
+  <md-card *ngIf="pokemonDetails" class="pokemon-details">
+    <md-card-header>
+      <img md-card-avatar src="{{pokemonDetails.sprites.gif}}">
+      <md-card-title><b>{{pokemonDetails.name}}</b></md-card-title>
+      <md-card-subtitle>{{pokemonDetails.surname}}</md-card-subtitle>
+    </md-card-header>
+    <img md-card-image src="{{pokemonDetails.sprites.artwork}}">
+    <md-card-content>
+      <p><b>Height:</b> {{pokemonDetails.height/10}}m</p>
+      <p><b>Weight:</b> {{pokemonDetails.weight/10}}kg</p>
+    </md-card-content>
+    <button md-raised-button color="accent" *ngIf="pokemonDetails.preEvolution" (click)="getDetails(pokemonDetails.preEvolution)">DEVOLVE...</button>
+    <button md-raised-button color="primary" *ngIf="pokemonDetails.evolution" (click)="getDetails(pokemonDetails.evolution)">EVOLVE!!!</button>
+  </md-card>
+</div>

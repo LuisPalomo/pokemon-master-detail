@@ -1,0 +1,39 @@
+.mat-list .mat-subheader {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.mat-list .mat-list-item .mat-list-avatar, .mat-card-avatar {
+  width: auto;
+  height: auto;
+}
+
+.mat-list .mat-list-item {
+  background: #ffffff;
+  border-radius: 50px;
+  cursor: pointer;
+  margin: 15px 0;
+}
+
+.mat-card-title {
+  margin-top: 1.3em;
+}
+
+.mat-card-image {
+    width: 100%;
+    margin: 5px 0;
+}
+
+.pokemon-list {
+  margin: 20px;
+}
+
+.pokemon-details {
+  margin: 20px;
+  padding-top: 0;
+  width: 400px;
+}
+
+.app-spinner {
+  margin: 200px;
+}
